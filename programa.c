@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 int main() {
+    
   printf("--------------------------------------------------------\n");
   printf("|                    MENU DE OPCOES                    |\n");
   printf("|  0 - SAIR DO GAME                                    |\n");
