@@ -1,21 +1,6 @@
 #include <stdio.h>
-#include <stdlib.h>
-
-void MenuZero() {
-  printf("--------------------------------------------------------\n");
-  printf("Menu 0\n");
-  printf("--------------------------------------------------------\n");
-  printf("Deseja sair do jogo S Sim / N Nao?\n");
-  char opcao;
-  scanf("%c", &opcao);
-  fflush(stdin);
-  if (opcao == 'S') {
-    //system("0");
-  }else {
-      
-  }
-  
-}
+#include <stdlib.h> // Fazer o system("clear") funciona
+#include <unistd.h> // Fazer o sleep(3) funcionar
 
 int EscolhaOpcao() {
   printf("--------------------------------------------------------\n");
@@ -35,7 +20,24 @@ int EscolhaOpcao() {
   system("clear");
   return nivel;
 }
+void MenuZero() {
+  printf("--------------------------------------------------------\n");
+  printf("Menu 0\n");
+  printf("--------------------------------------------------------\n");
+  printf("Deseja sair do jogo S Sim / N Nao?\n");
+  char opcao;
+  scanf("%s", &opcao);
+  fflush(stdin);
+  if (opcao == 'S') {
+    system("clear");
+    printf("Fechando programa...\n");
+    sleep(3);
+    exit(0);
+  } else {
+    printf("Volta ao menu");
+  }
 
+}
 int main() {
   int opcao = EscolhaOpcao();
   switch (opcao) {
