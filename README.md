@@ -6,7 +6,7 @@ executar o gitpod clicando no botão:</br></br>
 
 # PASSO 2:
 Ao abrir o gitpod ele vai abri a IDE baseado no VSCODE:
-Para executar o programa em C basta ir ao terminal:</br>
+Para executar o programa em C basta ir ao terminal:</br></br>
 ![alt](imagens/1.PNG)
 
 # PASSO 3:
@@ -21,7 +21,7 @@ Apois compilar ele ira gera um arquivo a.out para visualizar o codigo basta exec
 * ./a.out
 
 # PASSO 5:
-Resultado final:
+Resultado final:</br></br>
 ![alt](imagens/2.PNG)
 
 
