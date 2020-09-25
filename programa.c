@@ -14,7 +14,7 @@ int EscolhaOpcao() {
   printf("|  6 - VER OS DESENVOLVEDORES                          |\n");
   printf("|  7 - VER PONTUACAO                                   |\n");
   printf("--------------------------------------------------------\n");
-  printf("O QUE DESEJA FAZER ?                                    \n");
+  printf("O QUE DESEJA FAZER?                                     \n");
   int nivel;
   scanf("%d", &nivel);
   system("clear");
@@ -63,17 +63,31 @@ void MenuCinco() {
   printf("----------------------------------\n");
 }
 
-void MenuSeis() {
+int MenuSeis(int opcao) {
   printf("----------------------------------\n");
   printf("Menu 6 \n");
   printf("----------------------------------\n");
   printf("PROGRAMADORES.\n\n");
   printf("Victor Manuel de Barros Garcia\n");
-  printf("Nome do Aluno 2\n");
-  printf("Nome do Aluno 3\n");
+  printf("Marcos Paulo Carneiro Tavares\n");
+  printf("Nome do Aluno 3\n\n");
+  getchar();printf("PRESSIONE ENTER PARA COMECAR...");
+  getchar();system ("clear");
+  opcao = 10;
+  return opcao;
 }
 
 void MenuDois(){
+    char nome[100];
+    printf("DIGITE O NOME DO PARTICIPANTE: ");
+    scanf("%s", nome);
+    system ("clear");
+    printf("SEJA BEM VINDO %s\n\n",nome);    
+    printf("Este e um jogo de perguntas e respostas. O jogador devera escolher,\n");
+    printf("dentre as 4 alternativas apenas uma e em seguida pressionar enter\n");
+    printf("Para mais informacoes, acesse a opcao intrucoes do menu do jogo.\n\n");
+    getchar();printf("PRESSIONE ENTER PARA COMECAR...");
+    getchar();system ("clear");
     char resp,inicio;
     char cert='s';
     system("clear");
@@ -97,8 +111,7 @@ void MenuDois(){
     printf("|																			    |\n");
     printf("*=============================================================================*\n\n");
     printf("			  AS PERGUNSTAS DE NIVEL \"FACIL\" VALEM 2 PONTOS CADA             \n\n");
-
-    getchar();printf ("Pressione \"enter\" para continuar...");
+    printf ("Pressione \"enter\" para continuar...");
     getchar();system ("clear");
     printf ("*--------------------------------*\n");
     printf ("|  Pergunta 1 - Nivel Facil  |\n");
@@ -129,12 +142,12 @@ void MenuDois(){
     printf ("*--------------------------------*\n");
     printf ("|  Pergunta 2 - Nivel Facil   |\n");
     printf ("*--------------------------------*\n\n");
-    printf ("O QUE ESTA ESCRITO NA BANDEIRA DO BRASIL?\n");
+    printf ("Quais são as principais fabricantes de processadores para Desktops e notebooks ?\n");
     printf ("-------------------------------------------------------------------------------\n");
-    printf ("A) ORDEM E REGRESSO\n");
-    printf (" B) ORDEM E RETROCESSO\n");
-    printf ("C) ORDEM E PROGRESSO\n");
-    printf ("D) PROGRESSO E ORDEM\n");
+    printf ("A) Intel e Dell \n");
+    printf ("B) Dell e AMD \n");
+    printf ("C) Intel e AMD \n");
+    printf ("D) AMD e IBM \n");
     printf ("-------------------------------------------------------------------------------\n");
     printf ("Qual a resposta certa?\n");
     scanf ("%s",&resp);
@@ -146,13 +159,15 @@ void MenuDois(){
     else
     {
     printf ("Resposta errada\n");
-    printf ("Resposta correta: Letra \"c\"\n");
+    printf ("Resposta correta: Letra \"C\"\n");
     //errado_1++;
 }
 }
 
 int main() {
   int opcao = EscolhaOpcao();
+  //printf("%d",opcao);
+  do{
     switch (opcao) {
     case 0:
       MenuZero();
@@ -164,10 +179,12 @@ int main() {
       MenuCinco();
       break;
     case 6:
-      MenuSeis();
+      MenuSeis(opcao);
+      //opcao = 10;
       break;
     default:
       printf("VOCE DIGITOU ALGO ERRADO!\n");
     }
+    }while (opcao == 10);
   
 }
