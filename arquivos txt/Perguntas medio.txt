@@ -1,0 +1,154 @@
+*------------------------------------------------* 
+|| XXX    XX  XX  XX     XX  XXXXXXX  XX        ||               
+|| XX X   XX  XX  XX     XX  XX       XX        ||              
+|| XX  X  XX  XX   XX   XX   XXXXX    XX        ||               
+|| XX   X XX  XX    XX XX    XX       XX        ||              
+|| XX    XXX  XX     XXX     XXXXXXX  XXXXXX    ||                
+*------------------------------------------------* 
+|| XXXX   XXXX  XXXXXX  XXXXXXX    XX   XXXXX   ||            
+|| XX XX XX XX  XX      XX    XX   XX  XX   XX  ||            
+|| XX  XXX  XX  XXXXX   XX     XX  XX  XX   XX  ||            
+|| XX   X   XX  XX      XX    XX   XX  XX   XX  ||            
+|| XX       XX  XXXXXX  XXXXXXX    XX   XXXXX   ||            
+*------------------------------------------------* 
+
+//limpa a tela
+    
+// 1º questão medio
+// Trocar NUM quando apresentar a pergunta
+
+*--------------------------------*
+|  Pergunta NUM   - Nivel Medio   |
+*--------------------------------*
+O primeiro dominio registrado na internet foi:
+---------------------------------- 
+A) www.datacenter.com 
+B) www.symbolics.com 
+C) www.social.com 
+D) www.us.gov 
+---------------------------------- 
+    
+// 2º questão medio
+// Trocar NUM quando apresentar a pergunta
+
+*--------------------------------*
+|  Pergunta NUM   - Nivel Medio  |
+*--------------------------------*
+A maior parte das imagens da internet e composta por:  
+---------------------------------- 
+A) Papeis de parede 
+B) GIFs animados 
+C) Mulheres nuas 
+D) Fotografia de Eletronicos 
+---------------------------------- 
+    
+// 3º questão medio
+// Trocar NUM quando apresentar a pergunta
+
+*--------------------------------*
+|  Pergunta NUM   - Nivel Medio   |
+*--------------------------------*
+Quais destas nao e uma linguagem de programacao ?  
+A) Cobol 
+B) Basic 
+C) Smalltalk 
+D) Preview 
+---------------------------------- 
+    
+// 4º questão medio
+// Trocar NUM quando apresentar a pergunta
+
+*--------------------------------*
+|  Pergunta NUM   - Nivel Medio   |
+*--------------------------------*
+Qual a forma de memoria mais rapida, presente nos nossos computadores ?  
+---------------------------------- 
+A) A memoria Flash  
+B) A GDDR5 
+C) A memoria RAM DDR3 
+D) A memoria Cache 
+---------------------------------- 
+    
+// 5º questão medio
+// Trocar NUM quando apresentar a pergunta
+
+*--------------------------------*
+|  Pergunta NUM   - Nivel Medio   |
+*--------------------------------*
+Qual a vida util estimada para um DVD de boa qualidade ?  
+A) Aproximadamente 100 anos 
+B) É impossivel medir a durabilidade 
+C) 9 mil horas de leitura 
+D) 350 mil dias 
+---------------------------------- 
+    
+// 6º questão medio    
+// Trocar NUM quando apresentar a pergunta
+
+*--------------------------------*
+|  Pergunta NUM   - Nivel Medio   |
+*--------------------------------*
+A unidade central de processamento (UCP) e composta de:  
+---------------------------------- 
+A) Unidade Central de Processamento e Memória de Massa.  
+B) Dispositivos ou Unidades de Entrada. 
+C) Unidade Central de Processamento e Memoria Principal. 
+D) Unidade de Controle e Unidade de Lógica e Aritmetica. 
+---------------------------------- 
+    
+// 7º questão medio    
+// Trocar NUM quando apresentar a pergunta
+
+*--------------------------------*
+|  Pergunta NUM   - Nivel Medio   |
+*--------------------------------*
+A unidade de medida da resolucao de uma impressora e dada em:  
+---------------------------------- 
+A) CPS.  
+B) BPM. 
+C) PPM. 
+D) DPI. 
+---------------------------------- 
+    
+// 8º questão medio   
+// Trocar NUM quando apresentar a pergunta
+
+*--------------------------------*
+|  Pergunta NUM   - Nivel Medio   |
+*--------------------------------*
+Entre os meios de transmissao abaixo,  assinale aquele que nao eh guiado:  
+---------------------------------- 
+A) par trançado.  
+B) cabo coaxial. 
+C) microondas. 
+D) fibra ótica. 
+---------------------------------- 
+    
+// 9º questão medio 
+// Trocar NUM quando apresentar a pergunta
+
+*--------------------------------*
+|  Pergunta NUM   - Nivel Medio   |
+*--------------------------------*
+Em modo de espera, quais componentes ficam ligadas ?  
+---------------------------------- 
+A) Placa mae, processador, monitor  
+B) Placa mae, hd, monitor 
+C) Placa mae,memoria ram 
+D) Placa mae, Placa de rede, modem, memoria ram 
+---------------------------------- 
+    
+// 10º questão medio   
+// Trocar NUM quando apresentar a pergunta
+
+*--------------------------------*
+|  Pergunta NUM   - Nivel Medio   |
+*--------------------------------*
+Qual destes sistemas operacionais e usado em trens ?  
+---------------------------------- 
+A) Windows  
+B) Linux 
+C) Unix 
+D) Android 
+---------------------------------- 
+
