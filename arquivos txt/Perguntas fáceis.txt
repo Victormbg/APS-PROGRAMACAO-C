@@ -1,0 +1,137 @@
+// 1º questão facil    
+// Trocar NUM quando apresentar a pergunta
+
+*--------------------------------*
+|  Pergunta NUM   - Nivel Facil  |
+*--------------------------------*
+O que significa CPU? 
+---------------------------------- 
+A) Control Panel Unit - Unidade de Painel de Controle  
+B) Central Power Unit - Unidade de Força Central 
+C) Control Power Unit - Unidade de Controle de Energia 
+D) Central Processing Unit - Unidade Central de Processamento 
+---------------------------------- 
+     
+// 2º questão facil 
+// Trocar NUM quando apresentar a pergunta
+
+*--------------------------------*
+|  Pergunta NUM   - Nivel Facil  |
+*--------------------------------*
+Quais são as principais fabricantes de processadores para Desktops e notebooks ? 
+A) Intel e Dell 
+B) Dell e AMD 
+C) Intel e AMD 
+D) AMD e IBM 
+---------------------------------- 
+     
+// 3º questão facil
+// Trocar NUM quando apresentar a pergunta
+
+*--------------------------------*
+|  Pergunta NUM   - Nivel Facil  |
+*--------------------------------*
+Quais são os sintomas mais comuns de superaquecimento do processador ? 
+---------------------------------- 
+A) Apitos agudos da placa-mae  
+B) Reinicios e congelamentos inesperados da maquina 
+C) Cheiro de queimado que exala de dentro do gabinete 
+D) Imagem corrompida, com cores trocadas e manchas 
+---------------------------------- 
+     
+// 4º questão facil
+// Trocar NUM quando apresentar a pergunta
+
+*--------------------------------*
+|  Pergunta NUM   - Nivel Facil  |
+*--------------------------------*
+O que quer dizer bug ? 
+A) E a memoria que facilita as tarefas e liberta o processador. 
+B) E um tipo de periferico. 
+C) E um erro de programacao. 
+D) E uma peca de hardware 
+---------------------------------- 
+     
+// 5º pergunta facil
+// Trocar NUM quando apresentar a pergunta
+
+*--------------------------------*
+|  Pergunta NUM   - Nivel Facil  |
+*--------------------------------*
+O SPAM atualmente em 2012 corresponde a aproximadamente: 
+---------------------------------- 
+A) 50%% de todos os emails 
+B) 40%% de todos os bancos de dados mundiais 
+C) 80%% de todos os provedores de internet 
+D) 32%% da internet 
+---------------------------------- 
+    
+// 6º pergunta facil 
+// Trocar NUM quando apresentar a pergunta
+
+*--------------------------------*
+|  Pergunta NUM   - Nivel Facil  |
+*--------------------------------*
+A velocidade dos processadores atuais eh normalmente medida em: 
+---------------------------------- 
+A) Hertz ou Hz  
+B) Gigahertz ou GHz 
+C) Quilo byte ou Kb 
+D) Megabyte ou MB 
+---------------------------------- 
+     
+// 7º pergunta facil   
+// Trocar NUM quando apresentar a pergunta
+
+*--------------------------------*
+|  Pergunta NUM   - Nivel Facil  |
+*--------------------------------*
+O formato padrao dos arquivos gerados pelo Word eh : 
+---------------------------------- 
+A) txt.  
+B) doc. 
+C) xls. 
+D) html. 
+---------------------------------- 
+     
+// 8º pergunta facil  
+// Trocar NUM quando apresentar a pergunta
+
+*--------------------------------*
+|  Pergunta NUM   - Nivel Facil  |
+*--------------------------------*
+A extensao padrao de arquivos de audio no windows eh: 
+---------------------------------- 
+A) WAV.  
+B) BIN. 
+C) ARC. 
+D) WMF. 
+----------------------------------
+    
+// 9º pergunta facil   
+// Trocar NUM quando apresentar a pergunta
+
+*--------------------------------*
+|  Pergunta NUM   - Nivel Facil  |
+*--------------------------------*
+O numero binario 10101010 equivale a qual numero decimal apresentado 
+---------------------------------- 
+A)140  
+B)150 
+C)160 
+D)170 
+---------------------------------- 
+    
+// 10º pergunta facil   
+// Trocar NUM quando apresentar a pergunta
+
+*--------------------------------*
+|  Pergunta NUM   - Nivel Facil  |
+*--------------------------------* 
+Eh um tipo de computador que tem como funcao controlar as demais estacoes de trabalho quando ligados em uma rede de computadores: 
+---------------------------------- 
+A) Estacao de trabalho.  
+B) UMPC 
+C) Servidor 
+D) Desktop 
+---------------------------------- 
