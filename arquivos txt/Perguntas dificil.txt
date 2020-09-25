@@ -1,0 +1,182 @@
+
+*-----------------------------------------------* 
+|| XXX    XX  XX  XX     XX  XXXXXXX  XX       ||               
+|| XX X   XX  XX  XX     XX  XX       XX       ||               
+|| XX  X  XX  XX   XX   XX   XXXXX    XX       ||               
+|| XX   X XX  XX    XX XX    XX       XX       ||               
+|| XX    XXX  XX     XXX     XXXXXXX  XXXXXX   ||                
+*-----------------------------------------------* 
+|| XXXXXX    XX  XXXXX  XX   XXXXX  XX  XX     ||             
+|| XX    XX  XX  XX     XX  XX      XX  XX     ||             
+|| xX    XX  XX  XXXX   XX  XX      XX  XX     ||             
+|| xX    XX  XX  XX     XX  XX      XX  XX     ||             
+|| XXXXXX    XX  XX     XX   XXXXX  XX  XXXXXX ||             
+*-----------------------------------------------* 
+//limpa a tela
+    
+// 1º questão dificil
+// Trocar NUM quando apresentar a pergunta
+
+*--------------------------------*
+|  Pergunta NUM  - Nivel Dificil |
+*--------------------------------*
+Quando foi lançado o primeiro microprocessador ?  
+---------------------------------- 
+A) Em 1971, havendo 3 concorrentes 
+B) Em 1985, pela ARM Foundation 
+C) Em 1979, pela Motorola 
+D) Em 1944, durante a Segunda Guerra Mundial 
+---------------------------------- 
+    
+//  2º questão dificil
+// Trocar NUM quando apresentar a pergunta
+
+*--------------------------------*
+|  Pergunta NUM  - Nivel Dificil |
+*--------------------------------*
+Quem foi o pai da computacao ?
+----------------------------------
+A) Allan Moore
+B) Albert Einstein
+C) Thomas Ericsson
+D) Alan Turing
+----------------------------------
+    
+// 3º questão dificil
+// Trocar NUM quando apresentar a pergunta
+
+*--------------------------------*
+|  Pergunta NUM  - Nivel Dificil |
+*--------------------------------*
+O nome original do primeiro Xbox era:
+----------------------------------
+A) DirectBox
+B) BillBox
+C) ZBox
+D) MicrosoftBox
+----------------------------------
+    
+// 4º questão dificil
+// Trocar NUM quando apresentar a pergunta
+
+*--------------------------------*
+|  Pergunta NUM  - Nivel Dificil |
+*--------------------------------*
+Quais são as principais fabricantes de processadores ARM ?
+----------------------------------
+A) Samsung, PowerVR, AMD Tech e Intel
+B) Infineon Imaging, Texas Qualcomm e NVIDIA
+C) PowerVR, SGX, NVIDIA e Qualcomm Instruments
+D) Samsung, Texas Instruments, Qualcomm e NVIDIA
+----------------------------------
+ 
+// 5º questão dificil
+// Trocar NUM quando apresentar a pergunta
+
+*--------------------------------*
+|  Pergunta NUM  - Nivel Dificil |
+*--------------------------------*
+Qual das pastas abaixo nao pode ser criada no Windows ?
+---------------------------------- 
+A) Trojan
+B) Sys32
+C) Con
+D) Sys
+----------------------------------
+    
+//  6º questão dificil 
+// Trocar NUM quando apresentar a pergunta
+
+*--------------------------------*
+|  Pergunta NUM  - Nivel Dificil |
+*--------------------------------*
+O que eh firmware ?
+----------------------------------
+A)Interface basica do sistema operacional do Macintosh.
+B)Conjunto de instrucoes para o funcionamento de um dispositivo.
+C)Byte existente no inicio de uma trilha de disco.
+D)Eh um tipo de memoria nao volatil.
+----------------------------------
+    
+//  7º questão dificil   
+// Trocar NUM quando apresentar a pergunta
+
+*--------------------------------*
+|  Pergunta NUM  - Nivel Dificil |
+*--------------------------------*
+A tecnica em que parte do programa eh armazenada em disco e levada para a memoria para serexecutada quando necessario eh chamada de:
+----------------------------------
+A) armazenamento virtual
+B) alocação de memoria
+C) priorizacao de memoria
+D) alocação de recursos
+----------------------------------
+    
+    
+//  8º questão dificil  
+// Trocar NUM quando apresentar a pergunta
+
+*--------------------------------*
+|  Pergunta NUM  - Nivel Dificil |
+*--------------------------------*
+ FSB (Front Size Bus), tambem conhecido como barramento frontal, realiza a ligacao entre
+----------------------------------
+A) o processador (CPU) e o chipset
+B) o chipset e a memoria RAM
+C) o BIOS e a memória RAM
+D) o chipset e a placa-mãe
+----------------------------------
+
+//  9º questão dificil        
+// Trocar NUM quando apresentar a pergunta
+
+*--------------------------------*
+|  Pergunta NUM  - Nivel Dificil |
+*--------------------------------*
+Em relacao as topologias de redes, eh correto afirmar que:
+----------------------------------
+A) topologia em estrela todas as estacoes sao interligadas duas a duas entre si.
+B) rede em anel consiste em estacoes conectadas atraves de um caminho fechado.
+C) redes por chaveamento de pacotes cada estacao so pode realizar uma unica tarefa.
+D) topologia em estrela a falha de qualquer das estacoes causa a parada total do sistema.
+----------------------------------
+
+
+//  10º questão dificil   
+// Trocar NUM quando apresentar a pergunta
+
+*--------------------------------*
+|  Pergunta NUM  - Nivel Dificil |
+*--------------------------------*
+ CGA, EGA, VGA e SVGA sao siglas que identificamadaptadores graficos para:
+----------------------------------
+A) Videos
+B) Impressoras
+C) Drivers
+D) Teclados
+----------------------------------
+
+//limpar a tela
+5 - INSTRUCOES 
+Este eh um divertido jogo de perguntas e respostas.O jogador devera escolher,
+dentre as 4 alternativas (A, B, C, D), apenas uma e em seguida pressionar enter.
+O jogo lhe informa se vc acertou ou errou a questao.
+O jogo possui 3 niveis de dificuldade:
+Todos Niveis - Neste modo vc jogara o game completo
+ao final vera seus resultados com figuras em caracteres ASCII,
+estes são os famosos memes da internet, sao varios que
+sao mostrados de acordo com sua pontuação.
+Os niveis podem ser jogados de forma individual sem precisar
+jogar o game completo.
+    
+Sistema de pontuacao do game.
+Nivel facil   - Cada resposta certa valera 150 pontos
+Nivel medio   - Cada resposta certa valera 200 pontos
+Nivel dificil - Cada resposta certa valera 250 pontos
+Basicamente eh isso, divirta-se.             
+----------------------------------
+    
+
+ENTER para retornar ao menu ou ESC para sair.");
+                                                        
+//limpa a tela
