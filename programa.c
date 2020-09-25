@@ -179,12 +179,14 @@ int main() {
       MenuCinco();
       break;
     case 6:
-      MenuSeis(opcao);
+      opcao = MenuSeis(opcao);
+      //system("pause")
+      //system("read -p 'Press Enter to continue...' var");
       //opcao = 10;
       break;
     default:
       printf("VOCE DIGITOU ALGO ERRADO!\n");
     }
-    }while (opcao == 10);
+    }while (opcao != 10);
   
 }
