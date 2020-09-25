@@ -36,13 +36,54 @@ void MenuZero() {
   } else {
     printf("Volta ao menu");
   }
-
 }
+
+void MenuCinco() {
+  printf("----------------------------------\n");
+  printf("Menu 5 \n");
+  printf("----------------------------------\n\n");
+  printf("INSTRUCOES \n\n");
+  printf("Este eh um divertido jogo de perguntas e respostas.O jogador devera "
+         "escolher,\n");
+  printf("dentre as 4 alternativas (A, B, C, D), apenas uma e em seguida "
+         "pressionar enter.\n");
+  printf("O jogo lhe informa se vc acertou ou errou a questao.\n");
+  printf("O jogo possui 3 niveis de dificuldade:\n");
+  printf("Todos Niveis - Neste modo vc jogara o game completo\n");
+  printf("ao final vera seus resultados com figuras em caracteres ASCII,\n");
+  printf("estes são os famosos memes da internet, sao varios que\n");
+  printf("sao mostrados de acordo com sua pontuação.\n");
+  printf("Os niveis podem ser jogados de forma individual sem precisar\n");
+  printf("jogar o game completo.\n\n");
+  printf("Sistema de pontuacao do game.\n");
+  printf("Nivel facil   - Cada resposta certa valera 150 pontos\n");
+  printf("Nivel medio   - Cada resposta certa valera 200 pontos\n");
+  printf("Nivel dificil - Cada resposta certa valera 250 pontos\n");
+  printf("Basicamente eh isso, divirta-se.           \n");
+  printf("----------------------------------\n");
+}
+
+void MenuSeis() {
+  printf("----------------------------------\n");
+  printf("Menu 6 \n");
+  printf("----------------------------------\n");
+  printf("PROGRAMADORES.\n\n");
+  printf("Victor Manuel de Barros Garcia\n");
+  printf("Nome do Aluno 2\n");
+  printf("Nome do Aluno 3\n");
+}
+
 int main() {
   int opcao = EscolhaOpcao();
   switch (opcao) {
   case 0:
     MenuZero();
+    break;
+  case 5:
+    MenuCinco();
+    break;
+  case 6:
+    MenuSeis();
     break;
 
   default:
