@@ -75,18 +75,18 @@ void MenuSeis() {
 
 int main() {
   int opcao = EscolhaOpcao();
-  switch (opcao) {
-  case 0:
-    MenuZero();
-    break;
-  case 5:
-    MenuCinco();
-    break;
-  case 6:
-    MenuSeis();
-    break;
-
-  default:
-    printf("VOCE DIGITOU ALGO ERRADO!\n");
-  }
+    switch (opcao) {
+    case 0:
+      MenuZero();
+      break;
+    case 5:
+      MenuCinco();
+      break;
+    case 6:
+      MenuSeis();
+      break;
+    default:
+      printf("VOCE DIGITOU ALGO ERRADO!\n");
+    }
+  
 }
