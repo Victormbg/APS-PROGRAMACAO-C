@@ -73,11 +73,91 @@ void MenuSeis() {
   printf("Nome do Aluno 3\n");
 }
 
+void MenuDois(){
+    char resp,inicio;
+    char cert='s';
+    system("clear");
+    printf("*=============================================================================*\n");
+    printf("|  ___   ___ ___ ___	___ _________ ___									 |\n");
+    printf("|  XXX_  XXX XXX XXX	XXX XXXXXXXXX XXX									 |\n");
+    printf("|  XXXX_ XXX XXX XXX	XXX XXXXXXXXX XXX									 |\n");
+    printf("|  XXXXX_XXX XXX XXX_  _XXX XXX____   XXX									 |\n");
+    printf("|  XXXXXXXXX XXX  XXX__XXX  XXXXXXX   XXX									 |\n");
+    printf("|  XXX XXXXX XXX   XXXXXX   XXX______ XXX______							   |\n");
+    printf("|  XXX  XXXX XXX	XXXX	XXXXXXXXX XXXXXXXXX							   |\n");
+    printf("|  XXX   XXX XXX	 XX	 XXXXXXXXX XXXXXXXXX							   |\n");
+    printf("|								_________ _________ _________ ___ ___		|\n");
+    printf("|								XXXXXXXXX XXXXXXXXX XXXXXXXXX XXX XXX		|\n");
+    printf("|								XXXXXXXXX XXXXXXXXX XXXXXXXXX XXX XXX		|\n");
+    printf("|								XXX___	XXX___XXX XXX	   XXX XXX		|\n");
+    printf("|								XXXXXX	XXXXXXXXX XXX	   XXX XXX		|\n");
+    printf("|								XXXXXX	XXXXXXXXX XXX______ XXX XXX______  |\n");
+    printf("|								XXX	   XXX   XXX XXXXXXXXX XXX XXXXXXXXX  |\n");
+    printf("|								XXX	   XXX   XXX XXXXXXXXX XXX XXXXXXXXX  |\n");
+    printf("|																			 |\n");
+    printf("*=============================================================================*\n\n");
+    printf ("			  AS PERGUNSTAS DE NIVEL \"FACIL\" VALEM 2 PONTOS CADA\n\n");
+
+    getchar();printf ("Pressione \"enter\" para continuar...");
+    getchar();system ("clear");
+    printf ("*--------------------------------*\n");
+    printf ("|  Pergunta NUM   - Nivel Facil  |\n");
+    printf ("*--------------------------------*\n\n");
+    printf ("O que significa CPU?\n");
+    printf ("A) 5\n");
+    printf (" B) 7\n");
+    printf ("C) 4\n");
+    printf ("D) 2\n");
+    printf ("-------------------------------------------------------------------------------\n");
+    printf ("Qual a resposta certa?\n");
+    scanf ("%s",&resp);
+    if ((resp=='c')||(resp='C'))
+    {
+    printf ("Resposta correta\n");
+    //certo_1++;
+    }
+    else
+    {
+    printf ("Resposta errada\n");
+    printf ("Resposta correta: Letra \"c\"\n");
+    //errado_1++;
+    }
+    printf ("-------------------------------------------------------------------------------\n");
+    getchar();printf ("Pressione \"enter\" para continuar...");
+    getchar();system("clear");
+    printf ("*--------------------------------*\n");
+    printf ("|  Pergunta 2 - Nivel Facil   |\n");
+    printf ("*--------------------------------*\n\n");
+    printf ("O QUE ESTA ESCRITO NA BANDEIRA DO BRASIL?\n");
+    printf ("-------------------------------------------------------------------------------\n");
+    printf ("A) ORDEM E REGRESSO\n");
+    printf (" B) ORDEM E RETROCESSO\n");
+    printf ("C) ORDEM E PROGRESSO\n");
+    printf ("D) PROGRESSO E ORDEM\n");
+    printf ("-------------------------------------------------------------------------------\n");
+    printf ("Qual a resposta certa?\n");
+    scanf ("%s",&resp);
+    if ((resp=='c')||(resp=='C'))
+    {
+    printf ("Resposta correta\n");
+    //certo_1++;
+    }
+    else
+    {
+    printf ("Resposta errada\n");
+    printf ("Resposta correta: Letra \"c\"\n");
+    //errado_1++;
+}
+}
+
 int main() {
   int opcao = EscolhaOpcao();
     switch (opcao) {
     case 0:
       MenuZero();
+      break;
+    case 2:
+      MenuDois();
       break;
     case 5:
       MenuCinco();
