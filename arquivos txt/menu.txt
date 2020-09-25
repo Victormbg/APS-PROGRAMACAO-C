@@ -1,0 +1,133 @@
+----------------------------------
+Menu Principal
+----------------------------------
+      
+//limpar a tela
+                                                            
+*------------------------------------------------------*    
+|                    MENU DE OPCOES                    |
+*------------------------------------------------------*
+|  0 - SAIR DO GAME                                    |
+|  1 - JOGAR TODOS OS NIVEIS - GAME COMPLETO COM MEMES |
+|  2 - JOGAR NIVEL FACIL - SOMENTE O NIVEL FACIL       |    
+|  3 - JOGAR NIVEL MEDIO - SOMENTE O NIVEL MEDIO       |
+|  4 - JOGAR NIVEL DIFICIL - SOMENTE O NIVEL DIFICIL   |
+|  5 - VER INSTRUCOES DO JOGO E INFORMACOES            |
+|  6 - VER OS DESENVOLVEDORES                          |
+|  7 - VER PONTUACAO                                   |
+*------------------------------------------------------*
+O QUE DESEJA FAZER ?                                            
+//armazena opção em nivel 
+    
+
+//limpar a tela
+
+----------------------------------
+Menu 0
+----------------------------------
+
+Deseja sair do jogo S Sim / N Nao?
+
+
+////////////////////////////////////
+
+//limpar a tela
+
+----------------------------------
+Menu 5 
+----------------------------------
+
+INSTRUCOES 
+
+Este eh um divertido jogo de perguntas e respostas.O jogador devera escolher,
+dentre as 4 alternativas (A, B, C, D), apenas uma e em seguida pressionar enter.
+O jogo lhe informa se vc acertou ou errou a questao.
+O jogo possui 3 niveis de dificuldade:
+Todos Niveis - Neste modo vc jogara o game completo
+ao final vera seus resultados com figuras em caracteres ASCII,
+estes são os famosos memes da internet, sao varios que
+sao mostrados de acordo com sua pontuação.
+Os niveis podem ser jogados de forma individual sem precisar
+jogar o game completo.
+    
+Sistema de pontuacao do game.
+Nivel facil   - Cada resposta certa valera 150 pontos
+Nivel medio   - Cada resposta certa valera 200 pontos
+Nivel dificil - Cada resposta certa valera 250 pontos
+Basicamente eh isso, divirta-se.             
+----------------------------------
+    
+
+////////////////////////////////////
+ 
+//limpa a tela
+
+----------------------------------
+Menu 6 
+----------------------------------
+PROGRAMADORES.
+
+Nome do Aluno 1
+Nome do Aluno 2
+Nome do Aluno 3
+
+
+
+////////////////////////////////////
+
+//limpa a tela
+
+----------------------------------
+Menu 7
+----------------------------------
+
+RESULTADOS DO JOGO 
+
+PONTUACAO DO NIVEL  XXXX 
+Participante:    nome
+
+Total de acertos  : 
+Total de erros    : 
+Pontuacao total   : 
+
+
+
+
+////////////////////////////////////
+
+//  Outros menus
+
+////////////////////////////////////
+
+
+
+//limpa a tela
+
+----------------------------------
+Menu    entrar com jogador
+----------------------------------
+
+DIGITE O NOME DO PARTICIPANTE:
+
+SEJA BEM VINDO   XXXnome
+    
+Este e um jogo de perguntas e respostas. O jogador devera escolher,
+dentre as 4 alternativas apenas uma e em seguida pressionar enter
+Para mais informacoes, acesse a opcao intrucoes do menu do jogo.
+        
+PRESSIONE ENTER PARA COMECAR...");
+
+//limpa a tela
+    
+    
+
+////////////////////////////////////
+
+----------------------------------
+Menu ao final de cada pergunta
+----------------------------------
+    
+ENTER para retornar ao menu ou ESC para sair.");
+ 
+//limpa a tela
+
