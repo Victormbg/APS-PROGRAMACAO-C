@@ -2,7 +2,7 @@
 #include <stdlib.h> // Fazer o system("clear") funciona
 #include <unistd.h> // Fazer o sleep(3) funcionar
 
-int EscolhaOpcao() {
+void EscolhaOpcao() {
   printf("--------------------------------------------------------\n");
   printf("|                    MENU DE OPCOES                    |\n");
   printf("|  0 - SAIR DO GAME                                    |\n");
@@ -15,12 +15,10 @@ int EscolhaOpcao() {
   printf("|  7 - VER PONTUACAO                                   |\n");
   printf("--------------------------------------------------------\n");
   printf("O QUE DESEJA FAZER?                                     \n");
-  int nivel;
-  scanf("%d", &nivel);
-  system("clear");
-  return nivel;
 }
+
 void MenuZero() {
+  system("clear");
   printf("--------------------------------------------------------\n");
   printf("Menu 0\n");
   printf("--------------------------------------------------------\n");
@@ -34,7 +32,7 @@ void MenuZero() {
     sleep(3);
     exit(0);
   } else {
-    printf("Volta ao menu");
+    system("clear");
   }
 }
 
@@ -63,7 +61,8 @@ void MenuCinco() {
   printf("----------------------------------\n");
 }
 
-int MenuSeis(int opcao) {
+void MenuSeis() {
+  system("clear");
   printf("----------------------------------\n");
   printf("Menu 6 \n");
   printf("----------------------------------\n");
@@ -73,8 +72,6 @@ int MenuSeis(int opcao) {
   printf("Nome do Aluno 3\n\n");
   getchar();printf("PRESSIONE ENTER PARA COMECAR...");
   getchar();system ("clear");
-  opcao = 10;
-  return opcao;
 }
 
 void MenuDois(){
@@ -165,10 +162,11 @@ void MenuDois(){
 }
 
 int main() {
-  int opcao = EscolhaOpcao();
-  //printf("%d",opcao);
+  int nivel = 1;
   do{
-    switch (opcao) {
+    EscolhaOpcao();  
+    scanf("%d", &nivel);
+    switch (nivel) {
     case 0:
       MenuZero();
       break;
@@ -179,14 +177,11 @@ int main() {
       MenuCinco();
       break;
     case 6:
-      opcao = MenuSeis(opcao);
-      //system("pause")
-      //system("read -p 'Press Enter to continue...' var");
-      //opcao = 10;
+      MenuSeis();
       break;
     default:
       printf("VOCE DIGITOU ALGO ERRADO!\n");
     }
-    }while (opcao != 10);
+    }while (nivel);
   
 }
