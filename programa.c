@@ -26,10 +26,10 @@ void MenuZero() {
   char opcao;
   scanf("%s", &opcao);
   fflush(stdin);
-  if (opcao == 'S') {
+  if (opcao == 'S' || opcao == 's') {
     system("clear");
     printf("Fechando programa...\n");
-    sleep(3);
+    sleep(2);
     exit(0);
   } else {
     system("clear");
@@ -59,6 +59,8 @@ void MenuCinco() {
   printf("Nivel dificil - Cada resposta certa valera 250 pontos\n");
   printf("Basicamente eh isso, divirta-se.           \n");
   printf("----------------------------------\n");
+    getchar();printf("PRESSIONE ENTER PARA VOLTAR...");
+  getchar();system ("clear");
 }
 
 void MenuSeis() {
@@ -70,11 +72,12 @@ void MenuSeis() {
   printf("Victor Manuel de Barros Garcia\n");
   printf("Marcos Paulo Carneiro Tavares\n");
   printf("Nome do Aluno 3\n\n");
-  getchar();printf("PRESSIONE ENTER PARA COMECAR...");
+  getchar();printf("PRESSIONE ENTER PARA VOLTAR...");
   getchar();system ("clear");
 }
 
 void MenuDois(){
+    system ("clear");
     char nome[100];
     printf("DIGITE O NOME DO PARTICIPANTE: ");
     scanf("%s", nome);
@@ -88,6 +91,8 @@ void MenuDois(){
     char resp,inicio;
     char cert='s';
     system("clear");
+    //Troca a cor do console // 7 branco 3 verde-agua
+    system("color 27");
     printf("*===============================================================================*\n");
     printf("|  ___   ___ ___ ___	___ _________ ___									    |\n");
     printf("|  XXX_  XXX XXX XXX	XXX XXXXXXXXX XXX									    |\n");
@@ -110,6 +115,7 @@ void MenuDois(){
     printf("			  AS PERGUNSTAS DE NIVEL \"FACIL\" VALEM 2 PONTOS CADA             \n\n");
     printf ("Pressione \"enter\" para continuar...");
     getchar();system ("clear");
+    system("color 07");
     printf ("*--------------------------------*\n");
     printf ("|  Pergunta 1 - Nivel Facil  |\n");
     printf ("*--------------------------------*\n\n");
@@ -182,6 +188,5 @@ int main() {
     default:
       printf("VOCE DIGITOU ALGO ERRADO!\n");
     }
-    }while (nivel);
-  
+    }while (nivel);  
 }
