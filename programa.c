@@ -18,7 +18,7 @@ void EscolhaOpcao() {
 }
 
 void MenuZero() {
-  system("clear");
+  system("clear || cls");
   printf("--------------------------------------------------------\n");
   printf("Menu 0\n");
   printf("--------------------------------------------------------\n");
@@ -27,16 +27,17 @@ void MenuZero() {
   scanf("%s", &opcao);
   fflush(stdin);
   if (opcao == 'S' || opcao == 's') {
-    system("clear");
+    system("clear || cls");
     printf("Fechando programa...\n");
     sleep(2);
     exit(0);
   } else {
-    system("clear");
+    system("clear || cls");
   }
 }
 
 void MenuCinco() {
+  system ("clear || cls");
   printf("----------------------------------\n");
   printf("Menu 5 \n");
   printf("----------------------------------\n\n");
@@ -59,12 +60,12 @@ void MenuCinco() {
   printf("Nivel dificil - Cada resposta certa valera 250 pontos\n");
   printf("Basicamente eh isso, divirta-se.           \n");
   printf("----------------------------------\n");
-    getchar();printf("PRESSIONE ENTER PARA VOLTAR...");
-  getchar();system ("clear");
+  getchar();printf("PRESSIONE ENTER PARA VOLTAR...");
+  getchar();system ("clear || cls");
 }
 
 void MenuSeis() {
-  system("clear");
+  system("clear || cls");
   printf("----------------------------------\n");
   printf("Menu 6 \n");
   printf("----------------------------------\n");
@@ -73,21 +74,21 @@ void MenuSeis() {
   printf("Marcos Paulo Carneiro Tavares\n");
   printf("Nome do Aluno 3\n\n");
   getchar();printf("PRESSIONE ENTER PARA VOLTAR...");
-  getchar();system ("clear");
+  getchar();system ("clear || cls");
 }
 
 void MenuDois(){
-    system ("clear");
+    system ("clear || cls");
     char nome[100];
     printf("DIGITE O NOME DO PARTICIPANTE: ");
     scanf("%s", nome);
-    system ("clear");
+    system ("clear || cls");
     printf("SEJA BEM VINDO %s\n\n",nome);    
     printf("Este e um jogo de perguntas e respostas. O jogador devera escolher,\n");
     printf("dentre as 4 alternativas apenas uma e em seguida pressionar enter\n");
     printf("Para mais informacoes, acesse a opcao intrucoes do menu do jogo.\n\n");
     getchar();printf("PRESSIONE ENTER PARA COMECAR...");
-    getchar();system ("clear");
+    getchar();system ("clear || cls");
     char resp,inicio;
     char cert='s';
     system("clear");
@@ -114,7 +115,7 @@ void MenuDois(){
     printf("*=============================================================================*\n\n");
     printf("			  AS PERGUNSTAS DE NIVEL \"FACIL\" VALEM 2 PONTOS CADA             \n\n");
     printf ("Pressione \"enter\" para continuar...");
-    getchar();system ("clear");
+    getchar();system ("clear || cls");
     system("color 07");
     printf ("*--------------------------------*\n");
     printf ("|  Pergunta 1 - Nivel Facil  |\n");
@@ -141,7 +142,7 @@ void MenuDois(){
     }
     printf ("-------------------------------------------------------------------------------\n");
     getchar();printf ("Pressione \"enter\" para continuar...");
-    getchar();system("clear");
+    getchar();system("clear || cls");
     printf ("*--------------------------------*\n");
     printf ("|  Pergunta 2 - Nivel Facil   |\n");
     printf ("*--------------------------------*\n\n");
