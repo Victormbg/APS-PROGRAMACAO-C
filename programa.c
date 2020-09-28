@@ -76,6 +76,21 @@ void MenuSeis() {
   getchar();printf("PRESSIONE ENTER PARA VOLTAR...");
   getchar();system ("clear || cls");
 }
+void MenuSete(){
+    system("clear || cls");
+    printf("----------------------------------\n");
+    printf("Menu 7 \n");
+    printf("----------------------------------\n\n");  
+    printf("RESULTADOS DO JOGO \n\n");
+    printf("PONTUACAO DO NIVEL  XXXX \n");
+    printf("Participante:  nome \n\n");
+    printf("Total de acertos  : \n");
+    printf("Total de erros    : \n");
+    printf("Pontuacao total   : \n\n");
+    getchar();printf("PRESSIONE ENTER PARA VOLTAR...");
+    getchar();system ("clear || cls");
+}
+ 
 
 void MenuDois(){
     system ("clear || cls");
@@ -91,8 +106,8 @@ void MenuDois(){
     getchar();system ("clear || cls");
     char resp,inicio;
     char cert='s';
-    system("clear");
-    //Troca a cor do console // 7 branco 3 verde-agua
+    system("clear || cls");
+    //Troca a cor do console // 2 verde 7 branco
     system("color 27");
     printf("*===============================================================================*\n");
     printf("|  ___   ___ ___ ___	___ _________ ___									    |\n");
@@ -116,6 +131,7 @@ void MenuDois(){
     printf("			  AS PERGUNSTAS DE NIVEL \"FACIL\" VALEM 2 PONTOS CADA             \n\n");
     printf ("Pressione \"enter\" para continuar...");
     getchar();system ("clear || cls");
+    //Troca a cor do console // 0 preto 7 branco
     system("color 07");
     printf ("*--------------------------------*\n");
     printf ("|  Pergunta 1 - Nivel Facil  |\n");
@@ -185,6 +201,9 @@ int main() {
       break;
     case 6:
       MenuSeis();
+      break;
+    case 7:
+      MenuSete();
       break;
     default:
       printf("VOCE DIGITOU ALGO ERRADO!\n");
