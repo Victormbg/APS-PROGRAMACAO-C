@@ -78,10 +78,15 @@ void MenuSeis() {
 }
 
 int MenuDois(){
-    system ("clear || cls");
     char nome[100];
+    char resp,inicio;
+    //char cert='s';
+    int certo_1 = 0,errado_1 = 0;
+    // Limpar tela no terminal 
+    system ("clear || cls");
     printf("DIGITE O NOME DO PARTICIPANTE: ");
     scanf("%s", nome);
+    // Limpar tela no terminal
     system ("clear || cls");
     printf("SEJA BEM VINDO %s\n\n",nome);    
     printf("Este e um jogo de perguntas e respostas. O jogador devera escolher,\n");
@@ -89,11 +94,8 @@ int MenuDois(){
     printf("Para mais informacoes, acesse a opcao intrucoes do menu do jogo.\n\n");
     getchar();printf("PRESSIONE ENTER PARA COMECAR...");
     getchar();system ("clear || cls");
-    char resp,inicio;
-    char cert='s';
-    int certo = 0;
     system("clear || cls");
-    //Troca a cor do console // 2 verde 7 branco
+    //Troca a cor do console "2 verde 7 branco"
     system("color 27");
     printf("*===============================================================================*\n");
     printf("|  ___   ___ ___ ___	___ _________ ___									    |\n");
@@ -116,8 +118,9 @@ int MenuDois(){
     printf("*=============================================================================*\n\n");
     printf("			  AS PERGUNSTAS DE NIVEL \"FACIL\" VALEM 2 PONTOS CADA             \n\n");
     printf ("Pressione \"enter\" para continuar...");
+    // Limpar tela no terminal
     getchar();system ("clear || cls");
-    //Troca a cor do console // 0 preto 7 branco
+    //Troca a cor do console "0 preto 7 branco"
     system("color 07");
     printf ("*--------------------------------*\n");
     printf ("|  Pergunta 1 - Nivel Facil  |\n");
@@ -134,13 +137,13 @@ int MenuDois(){
     if ((resp=='d')||(resp='D'))
     {
         printf ("Resposta correta\n");
-        certo++;
+        certo_1++;
     }
     else
     {
         printf ("Resposta errada\n");
         printf ("Resposta correta: Letra \"D\"\n");
-        //errado_1++;
+        errado_1++;
     }
     printf ("-------------------------------------------------------------------------------\n");
     getchar();printf ("Pressione \"enter\" para continuar...");
@@ -160,17 +163,17 @@ int MenuDois(){
     if ((resp=='c')||(resp=='C'))
     {
         printf ("Resposta correta\n");
-        certo++;
+        certo_1++;
     }
     else
     {
         printf ("Resposta errada\n");
         printf ("Resposta correta: Letra \"C\"\n");
-        //errado_1++;
+        errado_1++;
     }
     printf ("Pressione \"enter\" para continuar...");
     getchar();system ("clear || cls");
-    return certo;
+    return certo_1;
 }
 
 void MenuSete(){
