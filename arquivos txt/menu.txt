@@ -86,9 +86,9 @@ RESULTADOS DO JOGO
 PONTUACAO DO NIVEL  XXXX 
 Participante:    nome
 
-Total de acertos  : 
-Total de erros    : 
-Pontuacao total   : 
+Total de acertos  : 5 
+Total de erros    : 5
+Pontuacao total   : 5x150
 
 
 
