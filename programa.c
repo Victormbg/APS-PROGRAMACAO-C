@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h> // Fazer o system("clear") funciona
+#include <stdlib.h> // Fazer o system("clear || cls") funciona
 #include <unistd.h> // Fazer o sleep(3) funcionar
 
 void EscolhaOpcao() {
@@ -72,15 +72,14 @@ void MenuSeis() {
   printf("PROGRAMADORES.\n\n");
   printf("Victor Manuel de Barros Garcia\n");
   printf("Marcos Paulo Carneiro Tavares\n");
-  printf("Nome do Aluno 3\n\n");
+  printf("Cainã James Moreira\n\n");
   getchar();printf("PRESSIONE ENTER PARA VOLTAR...");
   getchar();system ("clear || cls");
 }
 
 int MenuDois(){
     char nome[100];
-    char resp,inicio;
-    //char cert='s';
+    char resp;
     int certo_1 = 0,errado_1 = 0;
     // Limpar tela no terminal 
     system ("clear || cls");
@@ -177,7 +176,8 @@ int MenuDois(){
 }
 
 void MenuSete(){
-    //int res = MenuDois();
+    //int res = MenuDois(certo_1);
+    //int ponto = res * 150;
     system("clear || cls");
     printf("----------------------------------\n");
     printf("Menu 7 \n");
@@ -185,9 +185,9 @@ void MenuSete(){
     printf("RESULTADOS DO JOGO \n\n");
     printf("PONTUACAO DO NIVEL  XXXX \n");
     printf("Participante:  nome \n\n");
-    printf("Total de acertos  : \n");
+    //printf("Total de acertos  : %d\n",res);
     printf("Total de erros    : \n");
-    printf("Pontuacao total   : \n\n");
+    //printf("Pontuacao total   : %d\n\n",ponto);
     getchar();printf("PRESSIONE ENTER PARA VOLTAR...");
     getchar();system ("clear || cls");
 }
