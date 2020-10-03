@@ -211,17 +211,18 @@ void MenuDois() {
 }
 
 void MenuSete() {
-  int resAcerto = certo_1;
+  int resErrado1 = errado_1;
+  int resAcerto1 = certo_1;
   int ponto = certo_1 * 150;
   system("clear || cls");
   printf("----------------------------------\n");
-  printf("Menu 7 \n");
+  printf("              Menu 7              \n");
   printf("----------------------------------\n\n");
   printf("RESULTADOS DO JOGO \n\n");
   printf("PONTUACAO DO NIVEL  XXXX \n");
   printf("Participante: %s\n\n", nome);
-  printf("Total de acertos  : %d\n", resAcerto);
-  printf("Total de erros    : \n");
+  printf("Total de acertos  : %d\n", resAcerto1);
+  printf("Total de erros    : %d\n", resErrado1);
   printf("Pontuacao total   : %d\n\n", ponto);
   getchar();
   printf("PRESSIONE ENTER PARA VOLTAR...");
