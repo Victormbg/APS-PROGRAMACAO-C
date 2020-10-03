@@ -85,6 +85,7 @@ void MenuSeis() {
 }
 
 void MenuDois() {
+  certo_1 = 0, errado_1 = 0;
   char resp;
   // Limpar tela no terminal
   system("clear || cls");
@@ -167,10 +168,10 @@ void MenuDois() {
   printf("Qual a resposta certa?\n");
   scanf("%s", &resp);
   if ((resp == 'd') || (resp = 'D')) {
-    printf("Resposta correta\n");
+    printf("\nResposta correta\n");
     certo_1++;
   } else {
-    printf("Resposta errada\n");
+    printf("\nResposta errada\n");
     printf("Resposta correta: Letra \"D\"\n");
     errado_1++;
   }
@@ -196,10 +197,10 @@ void MenuDois() {
   printf("Qual a resposta certa?\n");
   scanf("%s", &resp);
   if ((resp == 'c') || (resp == 'C')) {
-    printf("Resposta correta\n");
+    printf("\nResposta correta\n");
     certo_1++;
   } else {
-    printf("Resposta errada\n");
+    printf("\nResposta errada\n");
     printf("Resposta correta: Letra \"C\"\n");
     errado_1++;
   }
