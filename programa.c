@@ -421,6 +421,7 @@ void MenuDois() {
     printf("Resposta correta: Letra \"C\"\n");
     errado_1++;
   }
+  getchar();
   printf("Pressione \"enter\" para continuar...");
   getchar();
   system("clear || cls");
