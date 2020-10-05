@@ -1,9 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h> // Fazer o system("clear || cls") funciona
 #include <unistd.h> // Fazer o sleep(3) funcionar
+#include <string.h>
 
 int certo_1 = 0, errado_1 = 0;
 char nome[100];
+char nomeNivel[100];
 
 void EscolhaOpcao() {
   printf("--------------------------------------------------------\n");
@@ -87,6 +89,7 @@ void MenuSeis() {
 void MenuDois() {
   certo_1 = 0, errado_1 = 0;
   char resp;
+  strcpy(nomeNivel, "Facil");
   // Limpar tela no terminal
   system("clear || cls");
   printf("DIGITE O NOME DO PARTICIPANTE: ");
@@ -219,7 +222,7 @@ void MenuSete() {
   printf("              Menu 7              \n");
   printf("----------------------------------\n\n");
   printf("RESULTADOS DO JOGO \n\n");
-  printf("PONTUACAO DO NIVEL  XXXX \n");
+  printf("PONTUACAO DO NIVEL %s\n", nomeNivel);
   printf("Participante: %s\n\n", nome);
   printf("Total de acertos  : %d\n", resAcerto1);
   printf("Total de erros    : %d\n", resErrado1);
