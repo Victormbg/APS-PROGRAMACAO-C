@@ -228,10 +228,10 @@ void MenuDois() {
   printf("Qual a resposta certa?\n");
   scanf("%s", &resp);
   if ((resp == 'b') || (resp == 'B')) {
-    printf("Resposta correta\n");
+    printf("\nResposta correta\n");
     certo_1++;
   } else {
-    printf("Resposta errada\n");
+    printf("\nResposta errada\n");
     printf("Resposta correta: Letra \"C\"\n");
     errado_1++;
   }
@@ -255,10 +255,10 @@ void MenuDois() {
   printf("Qual a resposta certa?\n");
   scanf("%s", &resp);
   if ((resp == 'c') || (resp == 'C')) {
-    printf("Resposta correta\n");
+    printf("\nResposta correta\n");
     certo_1++;
   } else {
-    printf("Resposta errada\n");
+    printf("\nResposta errada\n");
     printf("Resposta correta: Letra \"C\"\n");
     errado_1++;
   }
@@ -282,10 +282,10 @@ void MenuDois() {
   printf("Qual a resposta certa?\n");
   scanf("%s", &resp);
   if ((resp == 'a') || (resp == 'A')) {
-    printf("Resposta correta\n");
+    printf("\nResposta correta\n");
     certo_1++;
   } else {
-    printf("Resposta errada\n");
+    printf("\nResposta errada\n");
     printf("Resposta correta: Letra \"C\"\n");
     errado_1++;
   }
@@ -309,10 +309,10 @@ void MenuDois() {
   printf("Qual a resposta certa?\n");
   scanf("%s", &resp);
   if ((resp == 'b') || (resp == 'B')) {
-    printf("Resposta correta\n");
+    printf("\nResposta correta\n");
     certo_1++;
   } else {
-    printf("Resposta errada\n");
+    printf("\nResposta errada\n");
     printf("Resposta correta: Letra \"C\"\n");
     errado_1++;
   }
@@ -336,10 +336,10 @@ void MenuDois() {
   printf("Qual a resposta certa?\n");
   scanf("%s", &resp);
   if ((resp == 'b') || (resp == 'B')) {
-    printf("Resposta correta\n");
+    printf("\nResposta correta\n");
     certo_1++;
   } else {
-    printf("Resposta errada\n");
+    printf("\nResposta errada\n");
     printf("Resposta correta: Letra \"C\"\n");
     errado_1++;
   }
@@ -363,10 +363,10 @@ void MenuDois() {
   printf("Qual a resposta certa?\n");
   scanf("%s", &resp);
   if ((resp == 'a') || (resp == 'A')) {
-    printf("Resposta correta\n");
+    printf("\nResposta correta\n");
     certo_1++;
   } else {
-    printf("Resposta errada\n");
+    printf("\nResposta errada\n");
     printf("Resposta correta: Letra \"C\"\n");
     errado_1++;
   }
@@ -378,23 +378,21 @@ void MenuDois() {
   printf("--------------------------------\n");
   printf("|  Pergunta 9 - Nivel Facil   |\n");
   printf("--------------------------------\n\n");
-  printf("O numero binario 10101010 equivale a qual numero decimal apresentado "
+  printf("O numero binario 10101010 equivale a qual numero decimal apresentado"
          " ?\n");
-  printf("---------------------------------------------------------------------"
-         "----------\n");
+  printf("\n---------------------------------------------------------------\n");
   printf("A) 140\n");
   printf("B) 150 \n");
   printf("C) 160\n");
   printf("D) 170 \n");
-  printf("---------------------------------------------------------------------"
-         "----------\n");
+  printf("\n---------------------------------------------------------------\n");
   printf("Qual a resposta certa?\n");
   scanf("%s", &resp);
   if ((resp == 'd') || (resp == 'D')) {
-    printf("Resposta correta\n");
+    printf("\nResposta correta\n");
     certo_1++;
   } else {
-    printf("Resposta errada\n");
+    printf("\nResposta errada\n");
     printf("Resposta correta: Letra \"C\"\n");
     errado_1++;
   }
@@ -409,24 +407,23 @@ void MenuDois() {
   printf(
       "Eh um tipo de computador que tem como funcao controlar as demais "
       "estacoes de trabalho quando ligados em uma rede de computadores: ?\n");
-  printf("---------------------------------------------------------------------"
-         "----------\n");
+  printf("\n---------------------------------------------------------------\n");
   printf("A) Estacao de trabalho\n");
   printf("B) UMPC \n");
   printf("C) Servidor \n");
   printf("D) Desktop \n");
-  printf("---------------------------------------------------------------------"
-         "----------\n");
+  printf("\n---------------------------------------------------------------\n");
   printf("Qual a resposta certa?\n");
   scanf("%s", &resp);
   if ((resp == 'c') || (resp == 'C')) {
-    printf("Resposta correta\n");
+    printf("\nResposta correta\n");
     certo_1++;
   } else {
-    printf("Resposta errada\n");
+    printf("\nResposta errada\n");
     printf("Resposta correta: Letra \"C\"\n");
     errado_1++;
   }
+  printf("\n---------------------------------------------------------------\n");
   getchar();
   printf("Pressione ENTER para retornar ao menu");
   getchar();
@@ -491,10 +488,10 @@ void MenuTres() {
   printf("Qual a resposta certa?\n");
   scanf("%s", &resp);
   if ((resp == 'b') || (resp = 'B')) {
-    printf("Resposta correta\n");
+    printf("\nResposta correta\n");
     certo_2++;
   } else {
-    printf("Resposta errada\n");
+    printf("\nResposta errada\n");
     printf("Resposta correta: Letra \"D\"\n");
     errado_2++;
   }
@@ -518,10 +515,10 @@ void MenuTres() {
   printf("Qual a resposta certa?\n");
   scanf("%s", &resp);
   if ((resp == 'a') || (resp == 'A')) {
-    printf("Resposta correta\n");
+    printf("\nResposta correta\n");
     certo_2++;
   } else {
-    printf("Resposta errada\n");
+    printf("\nResposta errada\n");
     printf("Resposta correta: Letra \"C\"\n");
     errado_2++;
   }
@@ -545,10 +542,10 @@ void MenuTres() {
   printf("Qual a resposta certa?\n");
   scanf("%s", &resp);
   if ((resp == 'd') || (resp == 'D')) {
-    printf("Resposta correta\n");
+    printf("\nResposta correta\n");
     certo_2++;
   } else {
-    printf("Resposta errada\n");
+    printf("\nResposta errada\n");
     printf("Resposta correta: Letra \"C\"\n");
     errado_2++;
   }
@@ -573,10 +570,10 @@ void MenuTres() {
   printf("Qual a resposta certa?\n");
   scanf("%s", &resp);
   if ((resp == 'c') || (resp == 'C')) {
-    printf("Resposta correta\n");
+    printf("\nResposta correta\n");
     certo_2++;
   } else {
-    printf("Resposta errada\n");
+    printf("\nResposta errada\n");
     printf("Resposta correta: Letra \"C\"\n");
     errado_2++;
   }
@@ -600,10 +597,10 @@ void MenuTres() {
   printf("Qual a resposta certa?\n");
   scanf("%s", &resp);
   if ((resp == 'a') || (resp == 'A')) {
-    printf("Resposta correta\n");
+    printf("\nResposta correta\n");
     certo_2++;
   } else {
-    printf("Resposta errada\n");
+    printf("\nResposta errada\n");
     printf("Resposta correta: Letra \"C\"\n");
     errado_2++;
   }
@@ -627,10 +624,10 @@ void MenuTres() {
   printf("Qual a resposta certa?\n");
   scanf("%s", &resp);
   if ((resp == 'd') || (resp == 'D')) {
-    printf("Resposta correta\n");
+    printf("\nResposta correta\n");
     certo_2++;
   } else {
-    printf("Resposta errada\n");
+    printf("\nResposta errada\n");
     printf("Resposta correta: Letra \"C\"\n");
     errado_2++;
   }
@@ -654,10 +651,10 @@ void MenuTres() {
   printf("Qual a resposta certa?\n");
   scanf("%s", &resp);
   if ((resp == 'd') || (resp == 'D')) {
-    printf("Resposta correta\n");
+    printf("\nResposta correta\n");
     certo_2++;
   } else {
-    printf("Resposta errada\n");
+    printf("\nResposta errada\n");
     printf("Resposta correta: Letra \"C\"\n");
     errado_2++;
   }
@@ -682,10 +679,10 @@ void MenuTres() {
   printf("Qual a resposta certa?\n");
   scanf("%s", &resp);
   if ((resp == 'c') || (resp == 'C')) {
-    printf("Resposta correta\n");
+    printf("\nResposta correta\n");
     certo_2++;
   } else {
-    printf("Resposta errada\n");
+    printf("\nResposta errada\n");
     printf("Resposta correta: Letra \"C\"\n");
     errado_2++;
   }
@@ -709,10 +706,10 @@ void MenuTres() {
   printf("Qual a resposta certa?\n");
   scanf("%s", &resp);
   if ((resp == 'a') || (resp == 'A')) {
-    printf("Resposta correta\n");
+    printf("\nResposta correta\n");
     certo_2++;
   } else {
-    printf("Resposta errada\n");
+    printf("\nResposta errada\n");
     printf("Resposta correta: Letra \"C\"\n");
     errado_2++;
   }
@@ -736,16 +733,16 @@ void MenuTres() {
   printf("Qual a resposta certa?\n");
   scanf("%s", &resp);
   if ((resp == 'b') || (resp == 'B')) {
-    printf("Resposta correta\n");
+    printf("\nResposta correta\n");
     certo_2++;
   } else {
-    printf("Resposta errada\n");
+    printf("\nResposta errada\n");
     printf("Resposta correta: Letra \"C\"\n");
     errado_2++;
   }
   printf("\n---------------------------------------------------------------\n");
   getchar();
-  printf("Pressione \"enter\" para continuar...");
+  printf("Pressione ENTER para retornar ao menu");
   getchar();
   system("clear || cls");
 }
