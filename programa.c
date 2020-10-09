@@ -5,6 +5,7 @@
 
 int certo_1 = 0, errado_1 = 0;
 int certo_2 = 0, errado_2 = 0;
+int certo_3 = 0, errado_3 = 0;
 char nome[100];
 char nomeNivel[100];
 
@@ -89,6 +90,8 @@ void MenuSeis() {
 
 void MenuDois() {
   certo_1 = 0, errado_1 = 0;
+  certo_2 = 0, errado_2 = 0;
+  certo_3 = 0, errado_3 = 0;
   char resp;
   strcpy(nomeNivel, "Facil");
   // Limpar tela no terminal
@@ -110,47 +113,20 @@ void MenuDois() {
   system("clear || cls");
   // Troca a cor do console "2 verde 7 branco"
   system("color 27");
-  printf("*===================================================================="
-         "===========*\n");
-  printf("|  ___   ___ ___ ___	___ _________ ___			"
-         "						    |\n");
-  printf("|  XXX_  XXX XXX XXX	XXX XXXXXXXXX XXX			"
-         "						    |\n");
-  printf("|  XXXX_ XXX XXX XXX	XXX XXXXXXXXX XXX			"
-         "					    	|\n");
-  printf("|  XXXXX_XXX XXX XXX_  _XXX XXX____   XXX			"
-         "					     	|\n");
-  printf("|  XXXXXXXXX XXX  XXX__XXX  XXXXXXX   XXX			"
-         "						    |\n");
-  printf("|  XXX XXXXX XXX   XXXXXX   XXX______ XXX______		"
-         "				     	    |\n");
-  printf("|  XXX  XXXX XXX	XXXX	XXXXXXXXX XXXXXXXXX		"
-         "					        |\n");
-  printf("|  XXX   XXX XXX	 XX	    XXXXXXXXX XXXXXXXXX		"
-         "					        |\n");
-  printf("|								"
-         "_________ _________ _________ ___ ___	     	|\n");
-  printf("|								"
-         "XXXXXXXXX XXXXXXXXX XXXXXXXXX XXX XXX		    |\n");
-  printf("|								"
-         "XXXXXXXXX XXXXXXXXX XXXXXXXXX XXX XXX		    |\n");
-  printf("|								"
-         "XXX___	  XXX___XXX XXX	      XXX XXX           |\n");
-  printf("|								"
-         "XXXXXX	  XXXXXXXXX XXX	      XXX XXX		    |\n");
-  printf("|								"
-         "XXXXXX	  XXXXXXXXX XXX______ XXX XXX______     |\n");
-  printf("|								"
-         "XXX	      XXX   XXX XXXXXXXXX XXX XXXXXXXXX     |\n");
-  printf("|								"
-         "XXX	      XXX   XXX XXXXXXXXX XXX XXXXXXXXX     |\n");
-  printf("|								"
-         "								"
-         "			    |\n");
-  printf("*===================================================================="
-         "=========*\n\n");
-  printf("			  AS PERGUNSTAS DE NIVEL \"FACIL\" VALEM 2 "
-         "PONTOS CADA             \n\n");
+  printf("==================================================\n");
+  printf("|| XXX    XX  XX  XX     XX  XXXXXXX  XX        ||\n");
+  printf("|| XX X   XX  XX  XX     XX  XX       XX        ||\n");
+  printf("|| XX  X  XX  XX   XX   XX   XXXXX    XX        ||\n");
+  printf("|| XX   X XX  XX    XX XX    XX       XX        ||\n");
+  printf("|| XX    XXX  XX     XXX     XXXXXXX  XXXXXX    ||\n");
+  printf("--------------------------------------------------\n");
+  printf("|| XXXXX   XXX   XXXXXX  XX  XX       ||          \n");
+  printf("|| XX     XX XX  XX      XX  XX       ||          \n");
+  printf("|| XXXXX  XXXXX  XX      XX  XX       ||          \n");
+  printf("|| XX     XX XX  XX      XX  XX       ||          \n");
+  printf("|| XX     XX XX  XXXXXX  XX  XXXXXX   ||          \n");
+  printf("==================================================\n\n");
+  printf("  AS PERGUNSTAS DE NIVEL \"FACIL\" VALEM 150 PONTOS CADA\n\n");
   printf("Pressione \"enter\" para continuar...");
   // Limpar tela no terminal
   getchar();
@@ -431,7 +407,9 @@ void MenuDois() {
 }
 
 void MenuTres() {
+  certo_1 = 0, errado_1 = 0;
   certo_2 = 0, errado_2 = 0;
+  certo_3 = 0, errado_3 = 0;
   char resp;
   strcpy(nomeNivel, "");
   strcpy(nomeNivel, "Medio");
@@ -451,8 +429,8 @@ void MenuTres() {
   printf("PRESSIONE ENTER PARA COMECAR...");
   getchar();
   system("clear || cls");
-  // Troca a cor do console "2 verde 7 branco"
-  system("color 27");
+  // Troca a cor do console "7 branco c vermelho"
+  system("color 7c");
   printf("*===============================================================*\n");
   printf("|| XXX    XX  XX  XX     XX  XXXXXXX  XX        ||               \n");
   printf("|| XX X   XX  XX  XX     XX  XX       XX        ||               \n");
@@ -746,16 +724,350 @@ void MenuTres() {
   getchar();
   system("clear || cls");
 }
+
+void MenuQuatro() {
+  certo_1 = 0, errado_1 = 0;
+  certo_2 = 0, errado_2 = 0;
+  certo_3 = 0, errado_3 = 0;
+  char resp;
+  strcpy(nomeNivel, "");
+  strcpy(nomeNivel, "Dificil");
+  // Limpar tela no terminal
+  system("clear || cls");
+  printf("DIGITE O NOME DO PARTICIPANTE: ");
+  scanf("%s", nome);
+  // Limpar tela no terminal
+  system("clear || cls");
+  printf("SEJA BEM VINDO %s\n\n", nome);
+  printf(
+      "Este e um jogo de perguntas e respostas. O jogador devera escolher,\n");
+  printf("dentre as 4 alternativas apenas uma e em seguida pressionar enter\n");
+  printf(
+      "Para mais informacoes, acesse a opcao intrucoes do menu do jogo.\n\n");
+  getchar();
+  printf("PRESSIONE ENTER PARA COMECAR...");
+  getchar();
+  system("clear || cls");
+  // Troca a cor do console "7 branco c vermelho"
+  system("color c7");
+  printf("*================================================*\n");
+  printf("|| XXX    XX  XX  XX     XX  XXXXXXX  XX        ||\n");
+  printf("|| XX X   XX  XX  XX     XX  XX       XX        ||\n");
+  printf("|| XX  X  XX  XX   XX   XX   XXXXX    XX        ||\n");
+  printf("|| XX   X XX  XX    XX XX    XX       XX        ||\n");
+  printf("|| XX    XXX  XX     XXX     XXXXXXX  XXXXXX    ||\n");
+  printf("*------------------------------------------------*\n");
+  printf("|| XXXXXX    XX  XXXXX  XX   XXXXX  XX  XX     || \n");
+  printf("|| XX    XX  XX  XX     XX  XX      XX  XX     || \n");
+  printf("|| xX    XX  XX  XXXX   XX  XX      XX  XX     || \n");
+  printf("|| xX    XX  XX  XX     XX  XX      XX  XX     || \n");
+  printf("|| XXXXXX    XX  XX     XX   XXXXX  XX  XXXXXX || \n");
+  printf("*================================================*\n\n");
+  printf(
+      "  AS PERGUNSTAS DE NIVEL \"DIFICIL\" VALEM 250 PONTOS CADA       \n\n");
+  printf("Pressione \"enter\" para continuar...");
+  // Limpar tela no terminal
+  getchar();
+  system("clear || cls");
+  // Troca a cor do console "c vermelho 7 branco"
+  system("color 07");
+  printf("--------------------------------\n");
+  printf("|  Pergunta 1 - NivelDificil  |\n");
+  printf("--------------------------------\n\n");
+  printf("Quando foi lançado o primeiro microprocessador ? \n");
+  printf("---------------------------------------------------------------------"
+         "----------\n");
+  printf("A) Em 1971, havendo 3 concorrentes \n");
+  printf("B) Em 1985, pela ARM Foundation\n");
+  printf("C) Em 1979, pela Motorola \n");
+  printf("D) Em 1944, durante a Segunda Guerra Mundial\n");
+  printf("---------------------------------------------------------------------"
+         "----------\n");
+  printf("Qual a resposta certa?\n");
+  scanf("%s", &resp);
+  if ((resp == 'a') || (resp = 'A')) {
+    printf("\nResposta correta\n");
+    certo_3++;
+  } else {
+    printf("\nResposta errada\n");
+    printf("Resposta correta: Letra \"D\"\n");
+    errado_3++;
+  }
+  printf("\n---------------------------------------------------------------\n");
+  getchar();
+  printf("Pressione \"enter\" para continuar...");
+  getchar();
+  system("clear || cls");
+  printf("--------------------------------\n");
+  printf("|  Pergunta 2 - Nivel Dificil   |\n");
+  printf("--------------------------------\n\n");
+  printf("Quem foi o pai da computacao ?\n");
+  printf("---------------------------------------------------------------------"
+         "----------\n");
+  printf("A) Allan Moore\n");
+  printf("B) Albert Einstein\n");
+  printf("C) Thomas Ericsson\n");
+  printf("D) Alan Turing\n");
+  printf("---------------------------------------------------------------------"
+         "----------\n");
+  printf("Qual a resposta certa?\n");
+  scanf("%s", &resp);
+  if ((resp == 'd') || (resp == 'D')) {
+    printf("\nResposta correta\n");
+    certo_3++;
+  } else {
+    printf("\nResposta errada\n");
+    printf("Resposta correta: Letra \"C\"\n");
+    errado_3++;
+  }
+  printf("\n---------------------------------------------------------------\n");
+  getchar();
+  printf("Pressione \"enter\" para continuar...");
+  getchar();
+  system("clear || cls");
+  printf("--------------------------------\n");
+  printf("|  Pergunta 3 - Nivel Dificil   |\n");
+  printf("--------------------------------\n\n");
+  printf("O nome original do primeiro Xbox era:\n");
+  printf("---------------------------------------------------------------------"
+         "----------\n");
+  printf("A) Directx Box\n");
+  printf("B) BillBox\n");
+  printf("C) ZBox\n");
+  printf("D) MicrosoftBox\n");
+  printf("---------------------------------------------------------------------"
+         "----------\n");
+  printf("Qual a resposta certa?\n");
+  scanf("%s", &resp);
+  if ((resp == 'a') || (resp == 'A')) {
+    printf("\nResposta correta\n");
+    certo_3++;
+  } else {
+    printf("\nResposta errada\n");
+    printf("Resposta correta: Letra \"C\"\n");
+    errado_3++;
+  }
+  printf("\n---------------------------------------------------------------\n");
+  getchar();
+  printf("Pressione \"enter\" para continuar...");
+  getchar();
+  system("clear || cls");
+  printf("--------------------------------\n");
+  printf("|  Pergunta 4 - Nivel Dificil   |\n");
+  printf("--------------------------------\n\n");
+  printf("Quais são as principais fabricantes de processadores ARM ?\n");
+  printf("---------------------------------------------------------------------"
+         "----------\n");
+  printf("A) Samsung, PowerVR, AMD Tech e Intel\n");
+  printf("B) Infineon Imaging, Texas Qualcomm e NVIDIA\n");
+  printf("C) PowerVR, SGX, NVIDIA e Qualcomm Instruments\n");
+  printf("D) Samsung, Texas Instruments, Qualcomm e NVIDIA\n");
+  printf("---------------------------------------------------------------------"
+         "----------\n");
+  printf("Qual a resposta certa?\n");
+  scanf("%s", &resp);
+  if ((resp == 'd') || (resp == 'D')) {
+    printf("\nResposta correta\n");
+    certo_3++;
+  } else {
+    printf("\nResposta errada\n");
+    printf("Resposta correta: Letra \"C\"\n");
+    errado_3++;
+  }
+  printf("\n---------------------------------------------------------------\n");
+  getchar();
+  printf("Pressione \"enter\" para continuar...");
+  getchar();
+  system("clear || cls");
+  printf("--------------------------------\n");
+  printf("|  Pergunta 5 - Nivel Dificil   |\n");
+  printf("--------------------------------\n\n");
+  printf("Qual das pastas abaixo nao pode ser criada no Windows ?\n");
+  printf("---------------------------------------------------------------------"
+         "----------\n");
+  printf("A) Trojan\n");
+  printf("B) Sys32\n");
+  printf("C) Con\n");
+  printf("D) Sys\n");
+  printf("---------------------------------------------------------------------"
+         "----------\n");
+  printf("Qual a resposta certa?\n");
+  scanf("%s", &resp);
+  if ((resp == 'c') || (resp == 'C')) {
+    printf("Resposta correta\n");
+    certo_3++;
+  } else {
+    printf("\nResposta errada\n");
+    printf("Resposta correta: Letra \"C\"\n");
+    errado_3++;
+  }
+  printf("\n---------------------------------------------------------------\n");
+  getchar();
+  printf("Pressione \"enter\" para continuar...");
+  getchar();
+  system("clear || cls");
+  printf("--------------------------------\n");
+  printf("|  Pergunta 6 - Nivel Dificil   |\n");
+  printf("--------------------------------\n\n");
+  printf("O que eh firmware ?\n");
+  printf("---------------------------------------------------------------------"
+         "----------\n");
+  printf("A) Interface basica do sistema operacional do Macintosh.\n");
+  printf("B) Conjunto de instrucoes para o funcionamento de um dispositivo.\n");
+  printf("C) Byte existente no inicio de uma trilha de disco\n");
+  printf("D) Eh um tipo de memoria nao volatil\n");
+  printf("---------------------------------------------------------------------"
+         "----------\n");
+  printf("Qual a resposta certa?\n");
+  scanf("%s", &resp);
+  if ((resp == 'd') || (resp == 'D')) {
+    printf("\nResposta correta\n");
+    certo_3++;
+  } else {
+    printf("\nResposta errada\n");
+    printf("Resposta correta: Letra \"C\"\n");
+    errado_3++;
+  }
+  printf("\n---------------------------------------------------------------\n");
+  getchar();
+  printf("Pressione \"enter\" para continuar...");
+  getchar();
+  system("clear || cls");
+  printf("--------------------------------\n");
+  printf("|  Pergunta 7 - Nivel Dificil   |\n");
+  printf("--------------------------------\n\n");
+  printf("A tecnica em que parte do programa eh armazenada em disco e levada "
+         "para a memoria para serexecutada quando necessario eh chamada de:\n");
+  printf("---------------------------------------------------------------------"
+         "----------\n");
+  printf("A) armazenamento virtual\n");
+  printf("B) alocação de memoria\n");
+  printf("C) priorizacao de memoria\n");
+  printf("D) alocação de recursos\n");
+  printf("---------------------------------------------------------------------"
+         "----------\n");
+  printf("Qual a resposta certa?\n");
+  scanf("%s", &resp);
+  if ((resp == 'b') || (resp == 'B')) {
+    printf("\nResposta correta\n");
+    certo_3++;
+  } else {
+    printf("\nResposta errada\n");
+    printf("Resposta correta: Letra \"C\"\n");
+    errado_3++;
+  }
+  printf("\n---------------------------------------------------------------\n");
+  getchar();
+  printf("Pressione \"enter\" para continuar...");
+  getchar();
+  system("clear || cls");
+  printf("--------------------------------\n");
+  printf("|  Pergunta 8 - Nivel Dificil   |\n");
+  printf("--------------------------------\n\n");
+  printf(" FSB (Front Size Bus), tambem conhecido como barramento frontal, "
+         "realiza a ligacao entre\n");
+  printf("---------------------------------------------------------------------"
+         "----------\n");
+  printf("A) o processador (CPU) e o chipset\n");
+  printf("B) o chipset e a memoria RAM\n");
+  printf("C) o BIOS e a memória RAM\n");
+  printf("D) o chipset e a placa-mãe\n");
+  printf("---------------------------------------------------------------------"
+         "----------\n");
+  printf("Qual a resposta certa?\n");
+  scanf("%s", &resp);
+  if ((resp == 'd') || (resp == 'D')) {
+    printf("\nResposta correta\n");
+    certo_3++;
+  } else {
+    printf("\nResposta errada\n");
+    printf("Resposta correta: Letra \"C\"\n");
+    errado_3++;
+  }
+  printf("\n---------------------------------------------------------------\n");
+  getchar();
+  printf("Pressione \"enter\" para continuar...");
+  getchar();
+  system("clear || cls");
+  printf("--------------------------------\n");
+  printf("|  Pergunta 9 - Nivel Dificil   |\n");
+  printf("--------------------------------\n\n");
+  printf("Em relacao as topologias de redes, eh correto afirmar que:\n");
+  printf("---------------------------------------------------------------------"
+         "----------\n");
+  printf("A) topologia em estrela todas as estacoes sao interligadas duas a "
+         "duas entre si\n");
+  printf("B) rede em anel consiste em estacoes conectadas atraves de um "
+         "caminho fechado\n");
+  printf("C) redes por chaveamento de pacotes cada estacao so pode realizar "
+         "uma unica tarefa\n");
+  printf("D) topologia em estrela a falha de qualquer das estacoes causa a "
+         "parada total do sistema\n");
+  printf("---------------------------------------------------------------------"
+         "----------\n");
+  printf("Qual a resposta certa?\n");
+  scanf("%s", &resp);
+  if ((resp == 'd') || (resp == 'D')) {
+    printf("\nResposta correta\n");
+    certo_3++;
+  } else {
+    printf("\nResposta errada\n");
+    printf("Resposta correta: Letra \"C\"\n");
+    errado_3++;
+  }
+  printf("\n---------------------------------------------------------------\n");
+  getchar();
+  printf("Pressione \"enter\" para continuar...");
+  getchar();
+  system("clear || cls");
+  printf("--------------------------------\n");
+  printf("|  Pergunta 10 - Nivel Dificil   |\n");
+  printf("--------------------------------\n\n");
+  printf("CGA, EGA, VGA e SVGA sao siglas que identificamadaptadores graficos "
+         "para:\n");
+  printf("---------------------------------------------------------------------"
+         "----------\n");
+  printf("A) Videos\n");
+  printf("B) Impressoras\n");
+  printf("C) Drivers\n");
+  printf("D) Teclados\n");
+  printf("---------------------------------------------------------------------"
+         "----------\n");
+  printf("Qual a resposta certa?\n");
+  scanf("%s", &resp);
+  if ((resp == 'a') || (resp == 'A')) {
+    printf("\nResposta correta\n");
+    certo_3++;
+  } else {
+    printf("\nResposta errada\n");
+    printf("Resposta correta: Letra \"C\"\n");
+    errado_3++;
+  }
+  printf("\n---------------------------------------------------------------\n");
+  getchar();
+  printf("Pressione ENTER para retornar ao menu");
+  getchar();
+  system("clear || cls");
+}
+
 void MenuSete() {
   int resErrado, resAcerto, ponto;
-  if (errado_1 == 0 && certo_1 == 0) {
+  if (errado_1 == 0 && certo_1 == 0 && errado_3 == 0 && certo_3 == 0) {
     resErrado = errado_2;
     resAcerto = certo_2;
     ponto = certo_2 * 200;
-  } else {
+  } else if (errado_2 == 0 && certo_2 == 0 && errado_3 == 0 && certo_3 == 0) {
     resErrado = errado_1;
     resAcerto = certo_1;
     ponto = certo_1 * 150;
+  } else if (errado_1 == 0 && certo_1 == 0 && errado_2 == 0 && certo_2 == 0) {
+    resErrado = errado_3;
+    resAcerto = certo_3;
+    ponto = certo_3 * 250;
+  } else {
+    resErrado = 0;
+    resAcerto = 0;
+    ponto = 0;
   }
   system("clear || cls");
   printf("----------------------------------\n");
@@ -789,6 +1101,9 @@ int main() {
     case 3:
       MenuTres();
       break;
+    case 4:
+      MenuQuatro();
+      break;
     case 5:
       MenuCinco();
       break;
@@ -800,6 +1115,7 @@ int main() {
       break;
     default:
       printf("VOCE DIGITOU ALGO ERRADO!\n");
+      system("clear || cls");
     }
   } while (nivel);
 }
