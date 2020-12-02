@@ -2,22 +2,23 @@
 //#include <conio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <locale.h>
+#include <string.h>
 
 char letra;
 FILE *file;
 
 void EscolhaOpcao()
 {
-	printf("\n------------Programa editor de texto--------------\n\n");
-	printf("O que deseja fazer ?\n");
-	printf("A - Abrir um arquivo\n");
-	printf("F - Fechar arquivo\n");
-	printf("B - Buscar palavra\n");
-	printf("T - Trocar uma palavra pela outra\n");
-	printf("M - Este menu\n");
-	printf("P - Equipe de programadores\n");
-	printf("S - Sair do programa\n");
-	printf("-----------------------------------------------------\n");
+	printf("\n------------Programa Editor de Texto--------------\n\n");
+	printf("\tA - Abrir um arquivo\n");
+	printf("\tF - Fechar arquivo\n");
+	printf("\tB - Buscar palavra\n");
+	printf("\tT - Trocar uma palavra pela outra\n");
+	printf("\tM - Este menu\n");
+	printf("\tP - Equipe de programadores\n");
+	printf("\tS - Sair do programa\n");
+	printf("\n-----------------------------------------------------\n");
 }
 
 void AbriArquivo()
@@ -30,11 +31,47 @@ void AbriArquivo()
 	scanf("%d", &opcao);
 	if (opcao == 1)
 	{
-		file = fopen("texto1.txt", "w");
+		system("clear || cls");
+		file = fopen("texto1.txt", "r");
+		char frase[100];
+
+		while (fgets(frase, 100, file) != NULL)
+		{
+			printf("%s", frase);
+		}
+		getchar();
+		printf("\n\nPRESSIONE ENTER PARA FECHAR O TEXTO");
+		getchar();
+		system("clear || cls");
+		printf("Fechando arquivo...");
+		sleep(2);
+		system("clear || cls");
 	}
 	if (opcao == 2)
 	{
-		file = fopen("texto2.txt", "w");
+		system("clear || cls");
+		file = fopen("texto2.txt", "r");
+		char frase[100];
+		while (fgets(frase, 100, file) != NULL)
+		{
+			printf("%s", frase);
+		}
+		getchar();
+		printf("\n\nPRESSIONE ENTER PARA FECHAR O TEXTO");
+		getchar();
+		system("clear || cls");
+		printf("Fechando arquivo...");
+		sleep(2);
+		system("clear || cls");
+	}
+	if (file != NULL)
+	{
+		printf("O arquivo %d foi fechado com sucesso!\n", opcao);
+		printf("----------------------------------\n");
+		printf("PRESSIONE ENTER PARA VOLTAR AO MENU...");
+		getchar();
+		fclose(file);
+		system("clear || cls");
 	}
 	else
 	{
@@ -45,30 +82,51 @@ void AbriArquivo()
 		getchar();
 		system("clear || cls");
 	}
-
-	if (file != NULL)
-	{
-		printf("O arquivo %d foi aberto com sucesso!\n", opcao);
-		printf("----------------------------------\n");
-		getchar();
-		printf("PRESSIONE ENTER PARA VOLTAR...");
-		getchar();
-		system("clear || cls");
-	}
 }
 
 void FechaArquivo()
 {
+	printf("Não tem arquivo aberto\n");
+	printf("----------------------------------\n");
+	getchar();
+	printf("PRESSIONE ENTER PARA VOLTAR AO MENU...");
+	getchar();
+	system("clear || cls");
+	fclose(file);
+}
+
+void BuscarPalavra()
+{
+	/*
+	char frase[100];
+	system("clear || cls");
+	printf("---------------------------------------");
+	printf("\nDigite a palavra que deseja achar:\n");
+	printf("---------------------------------------");
+	scanf(frase);
+	file = fopen("texto1_aps2.txt", "r");
+
+	while (fscanf(frase, "%s", file) != NULL)
+	{
+		if (strcmp(file, "frase:") != NULL)
+		{
+			printf("\nPalavra: %s", frase);
+		}
+	}
+	*/
 }
 
 void Programadores()
 {
 	system("clear || cls");
-	printf("\n-----------------PROGRAMADORES---------------\n");
-	printf("Nome: Marcos Paulo C. Tavares / Matricula: 19200427\n");
-	printf("Nome: Victor Manuel de Barros Garcia / Matricula: 20102283\n");
-	printf("Nome: Caina Matricula: 00000000\n\n");
-	printf("----------------------------------\n");
+	printf("•*´¨`*•.¸¸.•*´¨`*•.¸¸.•*´¨`*•.¸¸.•*´¨`*•.¸¸.•*´¨`*•.¸¸.•*´¨`*•.¸¸.•*´¨`*•.¸¸.•*´¨`*•.¸¸.•");
+	printf("\n::: (_( …*…*…*…*…*…*…*…*…*…*…*…*::: (_( …*…*…*…*…*…*…*…*…*…*…*…*");
+	printf("\n*: (=’ :’) :::::::::::::::: PROGRAMADORES :::::::::::::::::::(=’ :’):*");
+	printf("\n\nNome: Marcos Paulo C. Tavares / Matricula: 19200427\n\n");
+	printf("Nome: Victor Manuel de Barros Garcia / Matricula: 20102283\n\n");
+	printf("Nome: Cainã James Moreira / Matricula: 20101780\n");
+	printf("\n•.. (,(”)(”)¤…*…*…*…*…*…*…*…*…*…*…*•.. (,(”)(”)¤…*…*…*…*…*…*…*…*…*…*…*");
+	printf("\n¸.•*´¨`*•.¸¸.•*´¨`*•.¸¸.•*´¨`*•.¸¸.•*´¨`*•.¸¸.•*´¨`*•.¸¸.•*´¨`*•.¸¸.•*´¨`*•.¸¸.•*´¨`*•.¸\n\n");
 	getchar();
 	printf("PRESSIONE ENTER PARA VOLTAR...");
 	getchar();
@@ -118,7 +176,7 @@ int main(void)
 			break;
 		case 'b':
 		case 'B':
-			printf("Buscar palavra\n");
+			BuscarPalavra();
 			break;
 		case 't':
 		case 'T':
