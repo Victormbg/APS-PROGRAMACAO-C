@@ -4,22 +4,22 @@
 #include <unistd.h>
 #include <locale.h>
 #include <string.h>
+#include <windows.h>
 
 char letra;
 FILE *file;
 
 void EscolhaOpcao()
 {
-	printf("\n------------Programa editor de texto--------------\n\n");
-	printf("O que deseja fazer ?\n");
-	printf("A - Abrir um arquivo\n");
-	printf("F - Fechar arquivo\n");
-	printf("B - Buscar palavra\n");
-	printf("T - Trocar uma palavra pela outra\n");
-	printf("M - Este menu\n");
-	printf("P - Equipe de programadores\n");
-	printf("S - Sair do programa\n");
-	printf("-----------------------------------------------------\n");
+	printf("\n------------Programa Editor de Texto--------------\n\n");
+	printf("\tA - Abrir um arquivo\n");
+	printf("\tF - Fechar arquivo\n");
+	printf("\tB - Buscar palavra\n");
+	printf("\tT - Trocar uma palavra pela outra\n");
+	printf("\tM - Este menu\n");
+	printf("\tP - Equipe de programadores\n");
+	printf("\tS - Sair do programa\n");
+	printf("\n-----------------------------------------------------\n");
 }
 
 void AbriArquivo()
@@ -93,20 +93,16 @@ void FechaArquivo()
 }
 
 void BuscarPalavra()
-{		char frase[100];
+{	
+	char frase[100];
 	system("clear || cls");	
 	printf("---------------------------------------");
 	printf("\nDigite a palavra que deseja achar:\n");
-	printf("---------------------------------------");
-	scanf(frase);
-	file = fopen("texto1_aps2.txt", "r");
-
-		
- 		while(fscanf(frase,"%s",file) != NULL){
- 		if(strcmp(file, "frase:") != NULL){
- 			printf("\nPalavra: %s", frase);
-		 }
- }
+	printf("---------------------------------------\n");
+	scanf("%s",&frase);
+	getchar();
+	sprintf(frase," %s  texto1_aps2.txt");
+	system(frase);
     
 }
 
@@ -152,7 +148,12 @@ void SairPrograma()
 
 int main(void)
 {
-	setlocale(LC_ALL,"Portuguese"); 
+	// Define o valor das páginas de código UTF8 e default do Windows
+	UINT CPAGE_UTF8 = 65001;
+	UINT CPAGE_DEFAULT = GetConsoleOutputCP();
+	// Define codificação como sendo UTF-8
+	SetConsoleOutputCP(CPAGE_UTF8);
+
 	system("clear || cls");
 	do
 	{
@@ -196,5 +197,6 @@ int main(void)
 			system("clear || cls");
 		}
 	} while (letra);
+	SetConsoleOutputCP(CPAGE_DEFAULT);
 }
 

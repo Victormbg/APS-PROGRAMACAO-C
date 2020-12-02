@@ -4,9 +4,11 @@
 #include <unistd.h>
 #include <locale.h>
 #include <string.h>
+#include <windows.h>
 
 char letra;
 FILE *file;
+int opcaoArquivo;
 
 void EscolhaOpcao()
 {
@@ -24,17 +26,15 @@ void EscolhaOpcao()
 void AbriArquivo()
 {
 	system("clear || cls");
-	int opcao;
 	printf("Escolha o arquivo:\n");
 	printf("1 - texto1\n");
 	printf("2 - texto2\n");
-	scanf("%d", &opcao);
-	if (opcao == 1)
+	scanf("%d", &opcaoArquivo);
+	if (opcaoArquivo == 1)
 	{
 		system("clear || cls");
 		file = fopen("texto1.txt", "r");
 		char frase[100];
-
 		while (fgets(frase, 100, file) != NULL)
 		{
 			printf("%s", frase);
@@ -43,11 +43,8 @@ void AbriArquivo()
 		printf("\n\nPRESSIONE ENTER PARA FECHAR O TEXTO");
 		getchar();
 		system("clear || cls");
-		printf("Fechando arquivo...");
-		sleep(2);
-		system("clear || cls");
 	}
-	if (opcao == 2)
+	else if (opcaoArquivo == 2)
 	{
 		system("clear || cls");
 		file = fopen("texto2.txt", "r");
@@ -60,25 +57,13 @@ void AbriArquivo()
 		printf("\n\nPRESSIONE ENTER PARA FECHAR O TEXTO");
 		getchar();
 		system("clear || cls");
-		printf("Fechando arquivo...");
-		sleep(2);
-		system("clear || cls");
-	}
-	if (file != NULL)
-	{
-		printf("O arquivo %d foi fechado com sucesso!\n", opcao);
-		printf("----------------------------------\n");
-		printf("PRESSIONE ENTER PARA VOLTAR AO MENU...");
-		getchar();
-		fclose(file);
-		system("clear || cls");
 	}
 	else
 	{
-		printf("O arquivo nao existe:\n");
+		printf("O arquivo não existe:\n");
 		printf("----------------------------------\n");
 		getchar();
-		printf("PRESSIONE ENTER PARA VOLTAR...");
+		printf("PRESSIONE ENTER PARA VOLTAR AO MENU...");
 		getchar();
 		system("clear || cls");
 	}
@@ -86,13 +71,29 @@ void AbriArquivo()
 
 void FechaArquivo()
 {
-	printf("Não tem arquivo aberto\n");
-	printf("----------------------------------\n");
-	getchar();
-	printf("PRESSIONE ENTER PARA VOLTAR AO MENU...");
-	getchar();
-	system("clear || cls");
-	fclose(file);
+	if (file != NULL)
+	{
+		system("clear || cls");
+		printf("O arquivo %d esta aberto!\n", opcaoArquivo);
+		printf("----------------------------------\n");
+		getchar();
+		printf("PRESSIONE ENTER PARA FECHAR O ARQUIVO...");
+		getchar();
+		system("clear || cls");
+		printf("Fechando arquivo...");
+		fclose(file);
+		sleep(2);
+		system("clear || cls");
+	}
+	if (file == NULL)
+	{
+		printf("Não tem nenhum arquivo aberto!\n");
+		printf("----------------------------------\n");
+		getchar();
+		printf("PRESSIONE ENTER PARA VOLTAR AO MENU...");
+		getchar();
+		system("clear || cls");
+	}
 }
 
 void BuscarPalavra()
@@ -136,9 +137,6 @@ void Programadores()
 void SairPrograma()
 {
 	system("clear || cls");
-	printf("--------------------------------------------------------\n");
-	printf("Menu 0\n");
-	printf("--------------------------------------------------------\n");
 	printf("Deseja sair do programa: S Sim / N Nao?\n");
 	char opcao;
 	scanf("%s", &opcao);
@@ -158,6 +156,9 @@ void SairPrograma()
 
 int main(void)
 {
+	UINT CPAGE_UTF8 = 65001;
+	UINT CPAGE_DEFAULT = GetConsoleOutputCP();
+	SetConsoleOutputCP(CPAGE_UTF8);
 	system("clear || cls");
 	do
 	{
@@ -201,4 +202,5 @@ int main(void)
 			system("clear || cls");
 		}
 	} while (letra);
+	SetConsoleOutputCP(CPAGE_DEFAULT);
 }
