@@ -7,7 +7,7 @@ executar o gitpod clicando no botão:</br></br>
 # PASSO 2:
 Ao abrir o gitpod ele vai abri a IDE baseado no VSCODE:
 Para executar o programa em C basta ir ao terminal:</br></br>
-![alt](imagens/1.PNG)
+![alt](APS1/imagens/1.PNG)
 
 # PASSO 3:
 Ira ter o arquivo chamado 'programa.c' que é o codigo e para compilar ele algo similar ao F9 no DEVC++:
