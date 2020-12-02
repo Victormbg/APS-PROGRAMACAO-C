@@ -22,7 +22,7 @@ Apois compilar ele ira gera um arquivo a.out para visualizar o codigo basta exec
 
 # PASSO 5:
 Resultado final:</br></br>
-![alt](imagens/2.PNG)
+![alt](APS1/imagens/2.PNG)
 
 
 
