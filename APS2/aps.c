@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <ctype.h>
 #include <stdlib.h>
 #include <unistd.h>
 #include <locale.h>
@@ -33,7 +32,7 @@ void AbriArquivo()
 	if (opcaoArquivo == 1)
 	{
 		system("clear || cls");
-		file = fopen("texto1_aps2.txt", "r");
+		file = fopen("texto1.txt", "r");
 		char frase[100];
 		while (fgets(frase, 100, file) != NULL)
 		{
@@ -42,13 +41,12 @@ void AbriArquivo()
 		getchar();
 		printf("\n\nPRESSIONE ENTER PARA FECHAR O TEXTO");
 		getchar();
-		fclose(file);
 		system("clear || cls");
 	}
 	else if (opcaoArquivo == 2)
 	{
 		system("clear || cls");
-		file = fopen("texto2_aps2.txt", "r");
+		file = fopen("texto2.txt", "r");
 		char frase[100];
 		while (fgets(frase, 100, file) != NULL)
 		{
@@ -61,7 +59,7 @@ void AbriArquivo()
 	}
 	else
 	{
-		printf("O arquivo n„o existe:\n");
+		printf("O arquivo n√£o existe:\n");
 		printf("----------------------------------\n");
 		getchar();
 		printf("PRESSIONE ENTER PARA VOLTAR AO MENU...");
@@ -86,9 +84,9 @@ void FechaArquivo()
 		sleep(2);
 		system("clear || cls");
 	}
-	else
+	if (file == NULL)
 	{
-		printf("N„o tem nenhum arquivo aberto!\n");
+		printf("N√£o tem nenhum arquivo aberto!\n");
 		printf("----------------------------------\n");
 		getchar();
 		printf("PRESSIONE ENTER PARA VOLTAR AO MENU...");
@@ -97,32 +95,44 @@ void FechaArquivo()
 	}
 }
 
-void BuscarPalavra(char palavraChave[])
-{	
+void BuscarPalavra()
+{
+	system("clear || cls");
+	printf("\nDigite a palavra que deseja localizar: ");
+	char w[200];
+	scanf("%s", &w);
+	system("clear || cls");
+	printf("Localizando palavra...");
+	sleep(1);
+	system("clear || cls");
+	printf("\nPalavra a ser procurada: %s", w);
 	char line[300];
-	char filePath[] = "texto1_aps2.txt";
-	file=fopen(filePath, "r");
-	
 	int found = 0;
-	if(file== NULL){
-		printf("\n Arquivo %s inexistente",filePath);
+	if (file == NULL)
+	{
+		printf("\n\nNenhum arquivo foi aberto");
+		getchar();
+		printf("\n\nPRESSIONE ENTER PARA VOLTAR AO MENU...");
+		getchar();
+		system("clear || cls");
 		return;
 	}
-	
-	while(!feof(file))
+
+	while (!feof(file))
 	{
-		fgets(line, 300,file);
-		
-		if(strstr(line, palavraChave) != NULL){	
-		printf("\n\n Palavra localizada: %s\n", line);
-		found =1;
+		fgets(line, 300, file);
+
+		if (strstr(line, w) != NULL)
+		{
+			printf("\n\nPalavra localizada no texto %d: %s\n", opcaoArquivo, line);
+			found = 1;
 		}
 	}
-	
-	if(found==0){
-	printf("\n\n Palavra nao encontrada");
+
+	if (found == 0)
+	{
+		printf("\n\nPalavra n√£o foi encontrada no texto %d", opcaoArquivo);
 	}
-	fclose(file);
 	getchar();
 	printf("\n\nPRESSIONE ENTER PARA VOLTAR AO MENU...");
 	getchar();
@@ -189,18 +199,7 @@ int main(void)
 			break;
 		case 'b':
 		case 'B':
-			//buscar Palavra
-			system("clear || cls");
-			printf("\nDigite a palavra que deseja localizar: \n\n");
-			char w[200];
-			scanf("\n %s", &w);
-			system("clear || cls");
-			printf("Localizando palavra...");
-			fclose(file);
-			sleep(2);
-			system("clear || cls");
-			printf("\n Palavra procurada: %s",w);
-			BuscarPalavra(w);
+			BuscarPalavra();
 			break;
 		case 't':
 		case 'T':
